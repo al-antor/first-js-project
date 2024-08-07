@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      P {
+        font-size: 2rem;
+        text-align: center;
+      }
+      input {
+        font-size: 1.3rem;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+      .box {
+        display: inline-block;
+        height: 7rem;
+        width: 7rem;
+        border: 2px black solid;
+        /* flex-wrap: wrap; */
+        gap: 2rem;
+        margin: 0.5rem;
+        text-align: center;
+      }
+      .red {
+        background-color: red;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .white {
+        background-color: white;
+      }
+      body {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <p>
+        Name:
+        <input
+          type="text"
+          id="nameinput"
+          style="
+            color: rgb(255, 255, 255);
+            background-color: rgb(224, 117, 206);
+          "
+        />
+      </p>
+      <p>
+        Roll :
+        <input
+          type="number"
+          id="rollinput"
+          style="
+            color: rgb(255, 255, 255);
+            background-color: rgb(224, 117, 206);
+          "
+        />
+      </p>
+      <p>
+        <input
+          type="submit"
+          id="submit"
+          style="color: rgb(255, 255, 255); background-color: rgb(0, 255, 42)"
+        />
+      </p>
+    </form>
+    <h1 class="text">
+      Your Name: <br /><span class="name"></span> <br />
+      Your roll: <br /><span class="roll"></span>
+    </h1>
+    <h1>Time is : <span class="time">__:__:__ __</span>.</h1>
+    <p>
+      <span class="box red">Red</span> <span class="box blue">Blue</span>
+      <span class="box white">White</span>
+      <span class="box yellow">Yellow</span>
+    </p>
+  </body>
+  <script src="script.js"></script>
+</html>
